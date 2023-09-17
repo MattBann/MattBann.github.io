@@ -5,3 +5,5 @@ header:
     url:    /projects
   - title:  Games
     url:    /games
+  - title:  Blog
+    url:    /blog
