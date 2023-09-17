@@ -1,0 +1,31 @@
+<style>
+    .gallery .swiper__slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+</style>
+<div class="swiper gallery">
+    <div class="swiper__wrapper">
+    {% for file in site.static_files %}
+    {% if file.path contains include.folder %}
+        {% if file.extname == '.png' %}
+            {% assign filenameparts = file.path | split: "/" %}
+            {% assign filename = filenameparts | last | replace: file.extname,"" %}
+            <div class="swiper__slide">
+                <img class="image image--xl border shadow" src="{{ file.path | relative_url }}" alt="{{ filename }}"/>
+            </div>
+        {% endif %}
+    {% endif %}
+    {% endfor %}
+    </div>
+    <div class="swiper__button swiper__button--prev fas fa-chevron-left"></div>
+    <div class="swiper__button swiper__button--next fas fa-chevron-right"></div>
+</div>
+<script>
+    {%- include scripts/lib/swiper.js -%}
+    var SOURCES = window.TEXT_VARIABLES.sources;
+    window.Lazyload.js(SOURCES.jquery, function() {
+    $('.gallery').swiper();
+    });
+</script>
