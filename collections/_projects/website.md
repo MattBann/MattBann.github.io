@@ -6,6 +6,10 @@ categories: projects visualisers godot
 cover: /assets/images/website/website-cover.png
 ---
 
+The website you're on now!
+
+<!--more-->
+
 ## Overview
 
 I built this website to showcase my previous projects as well as provide somewhere to write blog posts (though don't expect them to arrive with any regular frequency).
