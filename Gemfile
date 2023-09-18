@@ -34,3 +34,6 @@ gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 
 # Jekyll TeXt theme
 #gem "jekyll-text-theme"
+gem "jekyll-paginate"
+gem "jekyll-sitemap"
+gem "jemoji"
