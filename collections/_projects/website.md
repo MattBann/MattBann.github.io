@@ -10,6 +10,8 @@ The website you're on now!
 
 <!--more-->
 
+[{% include svg/github.svg %} View project on GitHub](https://github.com/MattBann/MattBann.github.io)
+
 ## Overview
 
 I built this website to showcase my previous projects as well as provide somewhere to write blog posts (though don't expect them to arrive with any regular frequency).
