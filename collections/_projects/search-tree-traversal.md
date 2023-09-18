@@ -24,7 +24,7 @@ Full instructions are available from the projects README. The repository link is
 
 ## Try it here
 
-<iframe frameborder="0" src="https://itch.io/embed/2200103" width="552" height="167"><a href="https://mattbann.itch.io/search-tree-traversal">Search Tree Traversal by MattBann</a></iframe>
+[Launch program](https://itch.io/embed-upload/8614510?color=333333){:.button.button--primary.button--rounded}
 
 ## How was it made?
 
