@@ -1,16 +1,16 @@
 <style>
-    .gallery .swiper__slide {
+    .image-gallery .swiper__slide {
         display: flex;
         align-items: center;
         justify-content: center;
     }
 </style>
 ## Gallery
-<div class="swiper gallery">
+<div class="swiper image-gallery">
     <div class="swiper__wrapper">
     {% for file in site.static_files %}
     {% if file.path contains include.folder %}
-        {% if file.extname == '.png' or file.extname == '.gif' or file.extname == 'jpeg' %}
+        {% if file.extname == '.png' or file.extname == '.gif' or file.extname == '.jpeg' %}
             {% assign filenameparts = file.path | split: "/" %}
             {% assign filename = filenameparts | last | replace: file.extname,"" %}
             <div class="swiper__slide">
@@ -27,6 +27,6 @@
     {%- include scripts/lib/swiper.js -%}
     var SOURCES = window.TEXT_VARIABLES.sources;
     window.Lazyload.js(SOURCES.jquery, function() {
-    $('.gallery').swiper();
+    $('.image-gallery').swiper();
     });
 </script>
